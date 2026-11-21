@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "synonyms"
+version = "0.1.0"
+description = "近义词与反义词：词库查询、连线题和选择题生成"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "eastyou" }]
+keywords = ["education", "chinese", "vocabulary", "teaching"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.scripts]
+synonyms = "synonyms.cli:main"
+
+[tool.setuptools]
+packages = ["synonyms"]
